@@ -3,9 +3,6 @@
 <p align="center">
   <a href="https://github.com/nadiva-anggraini"><img src="https://komarev.com/ghpvc/?username=nadiva-anggraini&style=for-the-badge" alt="Profile views"/></a>
 </p>
-<p align="center">
-  <a href="https://github.com/nadiva-anggraini?tab=repositories"><img src="https://komarev.com/ghpvc/?username=nadiva-anggraini&style=for-the-badge" alt="Repository views"/></a>
-</p>
 
 📊 **GitHub Stats**:
 <p align="center">

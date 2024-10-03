@@ -6,7 +6,7 @@
 
 📊 **GitHub Stats**:
 <p align="center">
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=nadiva-anggraini&theme=algolia&layout=compact" alt="Top Langs"/>
+  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=nadiva-anggraini&langs_count=8&layout=compact&theme=algolia" alt="Most Used Languages"/>
 </p>
 
 <p align="center">

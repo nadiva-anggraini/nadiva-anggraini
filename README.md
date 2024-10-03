@@ -1,7 +1,7 @@
 <h1 align="center">Hello, I'm Nadiva! 👋</h1>
 
 <p align="center">
-  <a href="https://github.com/nadiva-anggraini"><img src="https://komarev.com/ghpvc/?username=nadiva-anggraini&style=flat-square" alt="Profile views"/></a>
+  <a href="https://github.com/nadiva-anggraini"><img src="https://komarev.com/ghpvc/?username=nadiva-anggraini&style=for-the-badge" alt="Profile views"/></a>
 </p>
 📊 GitHub Stats:
 

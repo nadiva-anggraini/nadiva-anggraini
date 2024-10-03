@@ -27,7 +27,7 @@
   </a>
 </p>
 
-## Total Unique Days of Activity: 0
+## Total Unique Days of Activity: 2
 
 
 

@@ -12,3 +12,7 @@
 <p align="center">
   <img src="https://github-readme-stats.vercel.app/api?username=nadiva-anggraini&show_icons=true&theme=algolia" alt="nadiva-anggraini's GitHub Stats"/>
 </p>
+<p align="center">
+  <img src="https://img.shields.io/github/license/nadiva-anggraini/repository-name?style=for-the-badge" alt="License"/>
+</p>
+

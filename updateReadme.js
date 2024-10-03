@@ -5,41 +5,38 @@ const fetch = (await import('node-fetch')).default;
 const username = 'nadiva-anggraini';
 const readmeFilePath = 'README.md';
 
-async function getActivityDays() {
+async function getDistinctCommitDays() {
     const response = await fetch(`https://api.github.com/users/${username}/events`);
     if (!response.ok) {
         throw new Error('Failed to fetch events');
     }
     const events = await response.json();
-    
-    const uniqueDays = new Set();
-    const distinctDays = new Set();
+
+    const distinctCommitDays = new Set();
 
     events.forEach(event => {
-        const date = new Date(event.created_at).toISOString().split('T')[0];
-        uniqueDays.add(date);  // Menghitung unique days
-        distinctDays.add(date); // Menghitung distinct days (jika semua jenis event diinginkan)
+        // Memeriksa apakah event adalah commit
+        if (event.type === 'PushEvent') {
+            const date = new Date(event.created_at).toISOString().split('T')[0];
+            distinctCommitDays.add(date);  // Menghitung hari yang unik untuk commit
+        }
     });
 
-    return {
-        uniqueDaysCount: uniqueDays.size,
-        distinctDaysCount: distinctDays.size
-    };
+    return distinctCommitDays.size;
 }
 
 async function updateReadme() {
     try {
-        const { uniqueDaysCount, distinctDaysCount } = await getActivityDays();
+        const distinctDaysCount = await getDistinctCommitDays();
         const readmeContent = fs.readFileSync(readmeFilePath, 'utf-8');
 
-        // Mencari dan mengganti baris Total Unique Days dan Total Distinct Days
+        // Mencari dan mengganti baris Total Distinct Days of Contribution
         const updatedContent = readmeContent
-            .replace(/(## Total Unique Days of Activity: )\d+/, `$1${uniqueDaysCount}`)
-            .replace(/(## Total Distinct Days of Activity: )\d+/, `$1${distinctDaysCount}`);
+            .replace(/(## Total Distinct Days of Contribution: )\d+/, `$1${distinctDaysCount}`);
 
         // Menyimpan perubahan ke README.md
         fs.writeFileSync(readmeFilePath, updatedContent, 'utf-8');
-        console.log(`Updated README.md with Total Unique Days: ${uniqueDaysCount} and Total Distinct Days: ${distinctDaysCount}`);
+        console.log(`Updated README.md with Total Distinct Days of Contribution: ${distinctDaysCount}`);
     } catch (error) {
         console.error(error);
     }

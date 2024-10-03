@@ -16,14 +16,14 @@
   <img src="https://github-readme-streak-stats.herokuapp.com/?user=nadiva-anggraini&theme=algolia" alt="GitHub Streak Stats"/>
 </p>
 <p align="center">
-  <a href="https://github.com/nadiva-anggraini">
-    <img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white" alt="GitHub"/>
-  </a>
   <a href="https://x.com/naadiivaa">
     <img src="https://img.shields.io/badge/X-000000?style=for-the-badge&logo=x&logoColor=white" alt="X"/>
   </a>
   <a href="mailto:nadivaaanggraini@gmail.com">
     <img src="https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white" alt="Email"/>
+  </a>
+  <a href="https://github.com/nadiva-anggraini">
+    <img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white" alt="GitHub"/>
   </a>
 </p>
 

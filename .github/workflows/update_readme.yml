@@ -1,32 +1,39 @@
 name: Update README
 
 on:
-  schedule:
-    - cron: '0 0 * * *'  # Setiap hari pada tengah malam
+  push:
+    branches:
+      - main  # Ganti dengan nama branch Anda jika berbeda
   workflow_dispatch:
 
 jobs:
   update-readme:
     runs-on: ubuntu-latest
+
     steps:
-      - name: Checkout repository
+      - name: Checkout Repository
         uses: actions/checkout@v2
 
       - name: Set up Node.js
         uses: actions/setup-node@v2
         with:
-          node-version: '16'
+          node-version: '16'  # Ganti dengan versi Node.js yang Anda inginkan
 
-      - name: Install dependencies
-        run: npm install
-
-      - name: Run script to update README
-        run: node updateReadme.js  # Menjalankan skrip Anda
-
-      - name: Commit changes
+      - name: Install Dependencies
         run: |
-          git config --local user.email "nadiva-anggraini@gmail.com"
+          npm install
+
+      - name: Run Update Script
+        run: |
+          node updateReadme.js
+
+      - name: Commit Changes
+        run: |
+          git config --local user.email "nadivaaanggraini@gmail.com"
           git config --local user.name "nadiva-anggraini"
           git add README.md
-          git commit -m "Update unique days count" || echo "No changes to commit"
-          git push
+          git commit -m "Update README with unique and distinct days" || echo "No changes to commit"
+
+      - name: Push Changes
+        run: |
+          git push origin main  # Ganti dengan nama branch Anda jika berbeda

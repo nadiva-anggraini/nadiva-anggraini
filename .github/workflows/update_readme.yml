@@ -32,7 +32,7 @@ jobs:
           git config --local user.email "nadivaaanggraini@gmail.com"
           git config --local user.name "nadiva-anggraini"
           git add README.md
-          git commit -m "Update README with unique and distinct days" || echo "No changes to commit"
+          git commit -m "Update" || echo "No changes to commit"
 
       - name: Push Changes
         run: |

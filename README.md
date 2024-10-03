@@ -29,5 +29,8 @@
 
 ## Total Unique Days of Activity: 2
 
+## Total Distinct Days of Activity: 0
+
+
 
 

@@ -1,16 +1,15 @@
-## Hi there 👋
+<h1 align="center">Hi, I'm Rama! 👋</h1>
+<h3 align="center">A passionate full-stack developer from Banjarmasin, South Kalimantan.</h3>
 
-<!--
-**nadiva-anggraini/nadiva-anggraini** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+<p align="center">
+  <a href="https://github.com/nadiva-anggraini"><img src="https://komarev.com/ghpvc/?username=nadiva-anggraini&style=flat-square" alt="Profile views"/></a>
+</p>
+### 📊 GitHub Stats:
 
-Here are some ideas to get you started:
+<p align="center">
+  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=dante4rt&theme=algolia&layout=compact" alt="Top Langs"/>
+</p>
 
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
+<p align="center">
+  <img src="https://github-readme-stats.vercel.app/api?username=dante4rt&show_icons=true&theme=algolia" alt="dante4rt's GitHub Stats"/>
+</p>

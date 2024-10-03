@@ -1,5 +1,5 @@
-const fs = require('fs');
-const fetch = require('node-fetch');
+import fs from 'fs';
+const fetch = (await import('node-fetch')).default;
 
 // Ganti dengan username GitHub Anda
 const username = 'nadiva-anggraini';
@@ -38,4 +38,3 @@ async function updateReadme() {
 }
 
 updateReadme();
-

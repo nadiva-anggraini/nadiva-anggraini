@@ -27,8 +27,6 @@
   </a>
 </p>
 
-## Total Distinct Days of Contribution: 1
-
 
 
 
